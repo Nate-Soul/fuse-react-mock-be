@@ -3,6 +3,7 @@ import cors from "cors";
 import dotenv from "dotenv";
 import { connectDB } from "./models/connect.js";
 
+import contactRoute from "./routes/contact.router.js";
 
 const app = express();
 dotenv.config();
@@ -15,6 +16,7 @@ app.use(cors({
 app.use(express.json());
 app.use(express.urlencoded({extended: true}));
 
+app.use("/api/contact", contactRoute);
 
 app.listen(port, (req, res) => {
     connectDB();

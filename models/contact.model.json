@@ -1,0 +1,92 @@
+[
+    {
+      "avatar": "https://example.com/avatar1.jpg",
+      "background": "https://example.com/background1.jpg",
+      "name": "John Doe",
+      "emails": [
+        {
+          "email": "john.doe@example.com",
+          "label": "work"
+        },
+        {
+          "email": "johndoe@gmail.com",
+          "label": "personal"
+        }
+      ],
+      "phoneNumbers": [
+        {
+          "country": "us",
+          "phoneNumber": "123-456-7890",
+          "label": "mobile"
+        },
+        {
+          "country": "us",
+          "phoneNumber": "098-765-4321",
+          "label": "home"
+        }
+      ],
+      "title": "Software Engineer",
+      "company": "TechCorp",
+      "birthday": "1985-05-15T00:00:00.000Z",
+      "address": "123 Main St, Anytown, USA",
+      "notes": "Met at the tech conference.",
+      "tags": ["tech", "conference", "developer"]
+    },
+    {
+      "avatar": "https://example.com/avatar2.jpg",
+      "background": "https://example.com/background2.jpg",
+      "name": "Jane Smith",
+      "emails": [
+        {
+          "email": "jane.smith@business.com",
+          "label": "work"
+        },
+        {
+          "email": "janesmith@yahoo.com",
+          "label": "personal"
+        }
+      ],
+      "phoneNumbers": [
+        {
+          "country": "us",
+          "phoneNumber": "321-654-0987",
+          "label": "mobile"
+        },
+        {
+          "country": "us",
+          "phoneNumber": "987-654-3210",
+          "label": "work"
+        }
+      ],
+      "title": "Project Manager",
+      "company": "BusinessCorp",
+      "birthday": "1990-07-20T00:00:00.000Z",
+      "address": "456 Elm St, Othertown, USA",
+      "notes": "Collaborated on several projects.",
+      "tags": ["management", "project", "collaborator"]
+    },
+    {
+      "avatar": "https://example.com/avatar3.jpg",
+      "background": "https://example.com/background3.jpg",
+      "name": "Bob Johnson",
+      "emails": [
+        {
+          "email": "bob.johnson@enterprise.com",
+          "label": "work"
+        }
+      ],
+      "phoneNumbers": [
+        {
+          "country": "us",
+          "phoneNumber": "555-555-5555",
+          "label": "mobile"
+        }
+      ],
+      "title": "Marketing Director",
+      "company": "Enterprise Inc.",
+      "birthday": "1978-03-10T00:00:00.000Z",
+      "address": "789 Pine St, Somecity, USA",
+      "notes": "Keynote speaker at marketing summit.",
+      "tags": ["marketing", "summit", "keynote"]
+    }
+]  
