@@ -16,8 +16,8 @@ This guide provides step-by-step instructions to integrate the Fuse React Mock A
 Clone the repository on a single branch `main`.
 
 ```bash
-git clone -b main https://github.com/your-repo/fuse-react-mock-api.git
-cd fuse-react-mock-api
+git clone -b main https://github.com/Nate-Soul/fuse-react-mock-be.git
+cd fuse-react-mock-be
 ```
 
 ### 2. Install Dependencies
