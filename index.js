@@ -1,9 +1,9 @@
 import express from "express";
-import cors from "cors";
 import dotenv from "dotenv";
+import cors from "cors";
+import contactRoute from "./routes/contact.router.js";
 import { connectDB } from "./models/connect.js";
 
-import contactRoute from "./routes/contact.router.js";
 
 const app = express();
 dotenv.config();
@@ -16,9 +16,10 @@ app.use(cors({
 app.use(express.json());
 app.use(express.urlencoded({extended: true}));
 
-app.use("/api/contact", contactRoute);
+//routes
+app.use("/api/contacts", contactRoute);
 
 app.listen(port, (req, res) => {
     connectDB();
     console.log(`Server is running on port: ${port}`);
-})
+});

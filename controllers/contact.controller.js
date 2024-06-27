@@ -7,14 +7,14 @@ import {
     deleteContactService
 } from "../services/contact.services.js";
 
-const devMode = Boolean(process.env.DEBUG);
+// const devMode = process.env.SERVER_ENV === "DEVELOPMENT";
 
 //create new contact
 export const createContact = async (req, res) => {
     try {
         const createdContact = await createContactService(req);
         res.status(201).json(createdContact);
-        if (devMode === true) {
+        if (process.env.SERVER_ENV === "DEVELOPMENT") {
             console.log(`${req.method}: ${res.statusCode} | New Contact Created!`);
         }
     } catch (err) {
@@ -28,6 +28,9 @@ export const getContacts = async (req, res) => {
     try {
         const allContacts = await getContactsService();
         res.status(200).json(allContacts);
+        if (process.env.SERVER_ENV === "DEVELOPMENT") {
+            console.log(`${req.method}: ${res.statusCode} | Fetched all contacts successfully!`);
+        }
     } catch (err) {
         res.status(400);
         console.log(err.message);
